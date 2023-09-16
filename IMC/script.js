@@ -14,7 +14,7 @@ function calcularIMC() {
 
     const imc = peso / (altura * altura);
 
-    let resultado = `Tu IMC es: ${Math.round(imc)} <br>`;
+    let resultado = ` <strong >IMC= </strong>${Math.round(imc)}   <strong >Estado= </strong> `;
 
     if (imc < 18.5) {
         resultado += "Peso insuficiente";

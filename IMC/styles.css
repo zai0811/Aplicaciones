@@ -1,16 +1,26 @@
 
-.contenedor{
+body{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 17% 0 23%;
+}
+.contenedor{
+    display: flex;/* para que los elementos se adapten a la pantalla*/
+    flex-direction: row;/* alinea todo en una sola fila*/
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-around;/* ocupa toda la fila y agrega espacios en los costados*/
+    align-items: flex-start;/* para quetodos esten ubicado al inicio de la fila*/
+    margin-bottom: 35px;
+
 
 }
 input{
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 8px 10px;
+  margin: 15px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -22,10 +32,14 @@ input{
 button {
   background-color: #45a049;
   width: 100%;
-  border: 1px ;
-  border-radius: 4px;
-  padding: 12px 20px;
-  margin: 8px 0;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  flex: 1;
+  margin-top: 10px;
+  
   
 }
 
@@ -33,11 +47,18 @@ button {
 .formulariocss {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 18px 24px;
   
 }
-h2{
+h2 {
     text-align: center;
+    
+}
+#titulo{
+    background-color: aquamarine;
+    PADDING: 0px 40%;
+    border-top: 2px solid #333; /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+    margin: 0;
 }
 /* Estilos para la tabla */
 table {
@@ -61,6 +82,9 @@ th {
 
 
 #resultado {
-    font-size: 24px;
-    margin-top: 20px;
+    font-size: 20px;
+
+   
+    border-bottom: 2px solid #333; /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+
 }
