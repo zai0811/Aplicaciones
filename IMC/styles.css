@@ -1,5 +1,4 @@
-
-body{
+body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: initial;
@@ -7,84 +6,101 @@ body{
     flex-direction: column;
     margin: 5% 17% 0 23%;
 }
-.contenedor{
-    display: flex;/* para que los elementos se adapten a la pantalla*/
-    flex-direction: row;/* alinea todo en una sola fila*/
+
+.contenedor {
+    display: flex;
+    /* para que los elementos se adapten a la pantalla*/
+    flex-direction: row;
+    /* alinea todo en una sola fila*/
     flex-wrap: wrap;
-    justify-content: space-around;/* ocupa toda la fila y agrega espacios en los costados*/
-    align-items: flex-start;/* para quetodos esten ubicado al inicio de la fila*/
+    justify-content: space-around;
+    /* ocupa toda la fila y agrega espacios en los costados*/
+    align-items: flex-start;
+    /* para quetodos esten ubicado al inicio de la fila*/
     margin-bottom: 35px;
 
 
 }
-input{
-  width: 100%;
-  padding: 8px 10px;
-  margin: 15px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 
 
 button {
-  background-color: #45a049;
-  width: 100%;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 13px;
-  flex: 1;
-  margin-top: 10px;
-  
-  
+    background-color: #45a049;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    flex: 1;
+    margin-top: 10px;
+
+
 }
 
 
 .formulariocss {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 18px 24px;
-  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 18px 24px;
+
 }
+
 h2 {
     text-align: center;
-    
+    font-size: 90%;
 }
-#titulo{
+
+#titulo {
     background-color: aquamarine;
-    PADDING: 0px 40%;
-    border-top: 2px solid #333; /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+    PADDING: 9px 36%;
+    border-top: 2px solid #333;
     margin: 0;
+    font-size: 132%;
 }
+
 /* Estilos para la tabla */
 table {
     width: 100%;
-    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    border-collapse: collapse;
+    /* Colapsa los bordes de la tabla */
     margin-bottom: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ccc; /* Borde de la tabla y sus celdas */
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    /* Borde de la tabla y sus celdas */
 }
 
-th, td {
-    padding: 8px; /* Espaciado interno de celdas */
+th,
+td {
+    padding: 8px;
+    /* Espaciado interno de celdas */
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2; /* Color de fondo de las celdas de encabezado */
+    background-color: #f2f2f2;
+    /* Color de fondo de las celdas de encabezado */
 }
 
 
 #resultado {
     font-size: 20px;
-
-   
-    border-bottom: 2px solid #333; /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+    border-bottom: 2px solid #333;
+    /* Puedes ajustar el ancho y el color del borde según tus preferencias */
 
 }
+
