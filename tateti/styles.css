@@ -1,67 +1,106 @@
-/* estilos.css */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 75px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tablero {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-
-}
-
-.celda {
-    width: 100px;
-    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    justify-content: initial;
     align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    
-}
-/* Estilo para eliminar el borde superior de las 3 primeras celdas horizontales y unir los bordes */
-.celda:nth-child(-n+3) {
-    border-top: none;
-    border-bottom: 5px solid black; /* Grosor mayor y color de borde */
+    flex-direction: column;
+    margin: 5% 17% 0 23%;
 }
 
-/* Estilo para eliminar el borde inferior de las 3 últimas celdas horizontales y unir los bordes */
-.celda:nth-last-child(-n+3) {
-    border-bottom: none;
-    border-top: 5px solid black; /* Grosor mayor y color de borde */
+.contenedor {
+    display: flex;
+    /* para que los elementos se adapten a la pantalla*/
+    flex-direction: row;
+    /* alinea todo en una sola fila*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* ocupa toda la fila y agrega espacios en los costados*/
+    align-items: flex-start;
+    /* para quetodos esten ubicado al inicio de la fila*/
+    margin-bottom: 35px;
+
+
 }
 
-/* Estilo para eliminar el borde superior de las 3 primeras celdas verticales y unir los bordes */
-.celda:nth-child(3n + 1) {
-    border-left: none;
-    border-right: 5px solid black; /* Grosor mayor y color de borde */
+input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-/* Estilo para eliminar el borde inferior de las 3 últimas celdas verticales y unir los bordes */
-.celda:nth-child(3n) {
-    border-right: none;
-    border-left: 5px solid black; /* Grosor mayor y color de borde */
-}
 
-.celda:hover {
-    background-color: rgba(0, 0, 0, 0.09); /* Fondo transparente con un valor  (0.3) para transparencia */
-}
+
 button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: #45a049;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px
+    font-size: 13px;
+    flex: 1;
+    margin-top: 10px;
+
+
 }
-div{
-    justify-content: center;  
+
+
+.formulariocss {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 18px 24px;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 90%;
+}
+
+#titulo {
+    background-color: aquamarine;
+    PADDING: 9px 36%;
+    border-top: 2px solid #333;
+    margin: 0;
+    font-size: 132%;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Colapsa los bordes de la tabla */
+    margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    /* Borde de la tabla y sus celdas */
+}
+
+th,
+td {
+    padding: 8px;
+    /* Espaciado interno de celdas */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    /* Color de fondo de las celdas de encabezado */
+}
+
+
+#resultado {
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    /* Puedes ajustar el ancho y el color del borde según tus preferencias */
+
 }
 
